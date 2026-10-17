@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #182320;
+  --muted: #66736d;
+  --paper: #f7f8f4;
+  --green: #c9f36a;
+  --line: #dce2da;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "DM Sans", sans-serif;
+}
+.site-header {
+  max-width: 1120px;
+  margin: auto;
+  padding: 26px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  color: var(--ink);
+  font: 800 17px Manrope, sans-serif;
+  text-decoration: none;
+  letter-spacing: -.5px;
+}
+.brand span { color: #678b32; }
+nav { display: flex; gap: 30px; }
+nav a {
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+nav a:hover { color: var(--ink); }
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  padding: 100px max(28px, calc((100vw - 1064px) / 2)) 60px;
+  background: #eaf1e5;
+}
+.eyebrow {
+  margin: 0 0 20px;
+  color: #647b53;
+  font: 500 11px "DM Mono", monospace;
+  letter-spacing: 1.2px;
+}
+h1, h2, h3 { font-family: Manrope, sans-serif; }
+h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.06;
+  letter-spacing: -4px;
+}
+h1 span { color: #708b59; }
+.intro {
+  position: relative;
+  z-index: 1;
+  max-width: 510px;
+  margin: 26px 0 28px;
+  color: #536159;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  gap: 22px;
+  align-items: center;
+  padding: 14px 18px;
+  color: var(--ink);
+  background: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.signal {
+  position: absolute;
+  right: max(5%, calc((100vw - 1120px) / 2));
+  bottom: 100px;
+  width: 230px;
+  height: 140px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 9px;
+  opacity: .7;
+}
+.signal span {
+  display: block;
+  width: 100%;
+  height: 18px;
+  border: 1px solid #789264;
+  border-radius: 50%;
+  transform: rotate(-35deg);
+}
+.signal span:nth-child(3n) { height: 42px; }
+.signal span:nth-child(4n) { height: 60px; border-color: #a0ba82; }
+.signal-caption {
+  position: absolute;
+  right: max(5%, calc((100vw - 1120px) / 2));
+  bottom: 64px;
+  color: #647b53;
+  font: 10px "DM Mono", monospace;
+  letter-spacing: .8px;
+}
+.content-section, .contact {
+  max-width: 850px;
+  margin: auto;
+  padding: 100px 28px;
+}
+h2 {
+  max-width: 650px;
+  margin: 0 0 22px;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+.content-section > p:not(.eyebrow), .contact > p:not(.eyebrow) {
+  max-width: 700px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.method {
+  max-width: none;
+  padding-right: max(28px, calc((100vw - 1064px) / 2));
+  padding-left: max(28px, calc((100vw - 1064px) / 2));
+  background: #eef1eb;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+.steps article { border-top: 1px solid #bdc9b8; padding-top: 18px; }
+.steps article > span { color: #718365; font: 11px "DM Mono", monospace; }
+.steps h3 { margin: 18px 0 8px; font-size: 20px; }
+.steps p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.contact { padding-top: 90px; padding-bottom: 90px; }
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px max(28px, calc((100vw - 1064px) / 2));
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+footer span:first-child { color: var(--ink); font-weight: 700; }
+@media (max-width: 680px) {
+  .site-header { align-items: flex-start; gap: 22px; }
+  nav { gap: 13px; flex-wrap: wrap; justify-content: flex-end; }
+  nav a { font-size: 12px; }
+  .hero { min-height: 620px; padding-top: 78px; }
+  h1 { letter-spacing: -2.5px; }
+  .intro { font-size: 15px; }
+  .signal { right: 28px; bottom: 100px; width: 180px; opacity: .5; }
+  .signal-caption { right: 28px; bottom: 64px; }
+  .steps { grid-template-columns: 1fr; gap: 14px; }
+  .steps article { padding: 16px 0; }
+  .steps h3 { margin-top: 10px; }
+  footer { gap: 15px; flex-wrap: wrap; }
+}
