@@ -483,3 +483,32 @@ h2 { margin: 0 0 22px; font-size: clamp(36px, 4.4vw, 54px); line-height: 1.08; l
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+
+/* Ajustes de legibilidad y coherencia de la paleta */
+nav a, .header-cta { font-size: 14px; }
+.eyebrow { font-size: 12px; }
+.hero-footer, .art-label { font-size: 11px; }
+.number-label { font-size: 14px; }
+.numbers-note { font-size: 14px; }
+.intro-body p:not(.eyebrow), .section-heading > p:last-child,
+.findings-copy > p:not(.eyebrow), .frontier-list p, .path-copy > p:not(.eyebrow),
+.team-affiliation { font-size: 16px; }
+.method-chips span, .metric-tags span { font-size: 12px; }
+.metric-kicker, .metric-index, .section-footnote span { font-size: 11px; }
+.metric-card > p:not(.metric-kicker), .frontier-heading > p:last-child { font-size: 15px; }
+.section-footnote { font-size: 14px; }
+.evidence-line { font-size: 11px; }
+.signal-art circle[cx="540"] { fill: #c6b9dd; }
+.signal-art path + circle { fill: #9bbcaf; }
+
+@media (max-width: 700px) {
+  nav a { font-size: 12px; }
+  .eyebrow { font-size: 11px; }
+  .number-label, .numbers-note, .intro-body p:not(.eyebrow),
+  .section-heading > p:last-child, .metric-card > p:not(.metric-kicker),
+  .findings-copy > p:not(.eyebrow), .frontier-list p,
+  .path-copy > p:not(.eyebrow), .team-affiliation { font-size: 14px; }
+  .hero-footer, .art-label { font-size: 9px; }
+  .section-footnote { font-size: 13px; }
+}
