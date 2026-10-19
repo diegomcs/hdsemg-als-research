@@ -512,3 +512,5 @@ nav a, .header-cta { font-size: 14px; }
   .hero-footer, .art-label { font-size: 9px; }
   .section-footnote { font-size: 13px; }
 }
+
+.signal-art text { font-size: 12px !important; }
