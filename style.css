@@ -164,6 +164,16 @@ details[open] > summary .summary-mark { transform: rotate(45deg); }
 .references ol { display: grid; gap: 10px; margin: 0; padding: 0 0 20px 23px; color: #596f7e; font-size: 12px; line-height: 1.6; }
 .references li::marker { color: var(--teal-dark); }
 .references b { color: var(--navy); }
+.figure-panel { margin: 36px 0 0; padding: clamp(18px,2.4vw,30px); background: var(--paper); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+.figure-panel h3 { margin: 0 0 8px; color: var(--navy); font: 700 clamp(21px,2.1vw,26px)/1.25 "Manrope",sans-serif; letter-spacing: -.4px; }
+.figure-panel > p:not(.figure-swipe-hint) { max-width: 920px; margin: 0 0 18px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+.figure-viewport { min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+.figure-image-link { display: block; color: var(--teal-dark); text-decoration: none; }
+.figure-image-link picture,.figure-image-link img { display: block; width: 100%; height: auto; }
+.figure-link-label { display: block; padding: 9px 13px; color: var(--teal-dark); background: #f5f9fb; border-top: 1px solid var(--line); font-size: 13px; font-weight: 700; text-align: right; }
+.figure-swipe-hint { display: none; margin: 8px 0 0; color: var(--muted); font-size: 12px; }
+.figure-panel figcaption { margin-top: 11px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.timeline-image { background: #fff; }
 .contact-section { background: #eff6f8; border-block: 1px solid var(--line); }
 .contact-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 7%; align-items: center; }
 .affiliation-card { min-height: 255px; padding: 24px; background: #fff; border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow); }
@@ -260,6 +270,13 @@ details[open] > summary .summary-mark { transform: rotate(45deg); }
   .theory-content { padding: 0 15px 16px; }
   .theory-content p { font-size: 14px; }
   .references ol { padding-left: 19px; font-size: 12px; }
+  .figure-panel { margin-top: 28px; padding: 16px; }
+  .figure-panel > p:not(.figure-swipe-hint) { font-size: 14px; }
+  .figure-viewport { max-width: 100%; }
+  .figure-panel picture img,.figure-panel .timeline-image { width: 720px; max-width: none; }
+  .figure-link-label { width: 720px; }
+  .figure-swipe-hint { display: block; }
+  .figure-panel figcaption { font-size: 12px; }
   .affiliation-card { min-height: auto; }
   .author-card { grid-template-columns: 32px 1fr; padding: 17px 3px; }
   .author-card h3 { font-size: 18px; }

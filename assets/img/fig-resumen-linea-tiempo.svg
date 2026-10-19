@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Estudios clínicos de HD-sEMG en ELA, 2001–2026</title>
+  <desc id="desc">Once estudios distribuidos en cuatro filas por diseño: cuatro transversales o casos y controles, tres longitudinales, tres metodológicos o de validación y un reporte de caso. Los marcadores representan años, no tamaño muestral.</desc>
+  <rect width="1200" height="520" rx="18" fill="#fff"/>
+  <text x="38" y="48" fill="#17687d" font-family="monospace" font-size="16" letter-spacing="2">ESTUDIOS CON PACIENTES · 2001–2026</text>
+  <text x="38" y="83" fill="#566c7c" font-family="Arial,sans-serif" font-size="17">Los puntos ubican los estudios en el tiempo; el tamaño no representa participantes.</text>
+  <g font-family="Arial,sans-serif">
+    <g fill="#1e3548" font-size="17" font-weight="700">
+      <text x="38" y="158">Transversal / casos</text><text x="38" y="181">y controles</text>
+      <text x="38" y="248">Longitudinal</text>
+      <text x="38" y="338">Metodológico /</text><text x="38" y="361">validación</text>
+      <text x="38" y="428">Reporte de caso</text>
+    </g>
+    <g stroke="#d8e4eb" stroke-width="3" stroke-linecap="round">
+      <path d="M310 160H1150"/><path d="M310 250H1150"/><path d="M310 340H1150"/><path d="M310 430H1150"/>
+    </g>
+    <g fill="#718898" font-size="13">
+      <text x="310" y="490">2001</text><text x="478" y="490">2006</text><text x="646" y="490">2011</text><text x="814" y="490">2016</text><text x="982" y="490">2021</text><text x="1118" y="490">2026</text>
+    </g>
+    <path d="M310 466H1150" stroke="#a9bdc9" stroke-width="1.5"/>
+    <g fill="#21869a" stroke="#fff" stroke-width="4">
+      <circle cx="310" cy="160" r="9"/><circle cx="814" cy="160" r="9"/><circle cx="1016" cy="160" r="9"/><circle cx="1049" cy="160" r="9"/>
+      <circle cx="982" cy="250" r="9"/><circle cx="1049" cy="250" r="9"/><circle cx="1150" cy="250" r="9"/>
+      <circle cx="713" cy="340" r="9"/><circle cx="747" cy="340" r="9"/><circle cx="881" cy="340" r="9"/>
+      <circle cx="512" cy="430" r="9"/>
+    </g>
+    <g fill="#1e3548" font-size="13" font-weight="600">
+      <text x="310" y="139" text-anchor="middle">Wood</text><text x="814" y="139" text-anchor="middle">Sleutjes</text>
+      <text x="1016" y="139" text-anchor="end">Nishikawa</text><text x="1049" y="184" text-anchor="start">Noto</text>
+      <text x="982" y="229" text-anchor="end">Weddell</text><text x="1049" y="274" text-anchor="start">Trajano</text><text x="1150" y="229" text-anchor="end">Fernandes</text>
+      <text x="713" y="319" text-anchor="end">Zhang</text><text x="747" y="364" text-anchor="middle">Jahanmiri-Nezhad</text><text x="881" y="319" text-anchor="middle">Chen</text>
+      <text x="512" y="409" text-anchor="middle">Drost</text>
+    </g>
+    <g fill="#566c7c" font-size="12">
+      <text x="310" y="202" text-anchor="middle">2001</text><text x="814" y="202" text-anchor="middle">2016</text><text x="1016" y="202" text-anchor="end">2022</text><text x="1049" y="202" text-anchor="start">2023</text>
+      <text x="982" y="292" text-anchor="end">2021</text><text x="1049" y="292" text-anchor="start">2023</text><text x="1150" y="292" text-anchor="end">2026</text>
+      <text x="713" y="382" text-anchor="end">2013</text><text x="747" y="382" text-anchor="middle">2014</text><text x="881" y="382" text-anchor="middle">2018</text><text x="512" y="472" text-anchor="middle">2007</text>
+    </g>
+  </g>
+</svg>
